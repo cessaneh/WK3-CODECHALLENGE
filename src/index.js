@@ -30,20 +30,20 @@ function addMovie(movies){
 
     movieTitle = movies.title
     movieId = movies.id
-    let liFilm = document.createElement("li");
+    let liFilmss = document.createElement("li");
     if(!remaining > 0)
-    {  liFilm.className = "sold-out"
+    {  liFilmss.className = "sold-out"
     }
 
-    ulFilms.appendChild(liFilm);
+    ulFilms.appendChild(liFilmss);
 
     let movieSpan = document.createElement("span");
     movieSpan.innerText = movieTitle;
-    liFilm.appendChild(movieSpan);
+    liFilmss.appendChild(movieSpan);
 
     let deleteButton = document.createElement("button");
     deleteButton.innerText = "Delete"
-    liFilm.appendChild(deleteButton); 
+    liFilmss.appendChild(deleteButton); 
 
     deleteButton.addEventListener('click', () => {
         deleteMovie(movies)
